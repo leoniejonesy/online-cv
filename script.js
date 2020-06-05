@@ -16,7 +16,7 @@ function selectCard(cardNumber) {
     }
 
     setTimeout(function(){ 
-        document.getElementById('c' + cardNumber + 'Inner').classList.toggle('flip');
+        document.getElementById('c' + cardNumber + 'Inner').classList.toggle('flip' + cardNumber);
     }, 100);
 
     setTimeout(function(){ 

@@ -8,12 +8,19 @@ function selectCard(cardNumber) {
         document.getElementById('c5')
     ];
 
-    document.getElementById('c' + cardNumber).classList.add('selected-move-right-rotate');
-    document.getElementById('c' + cardNumber + 'Inner').classList.add('selected-inner-rotate');
-    for(var i = 0; i < cards.length; i++){
-        if(i != cardNumber -1)
-        {
-            cards[i].classList.add('move-left-' + cards[i].id);
+    for(var i = 1; i <= 5; i++){
+        if(i != cardNumber){
+            document.getElementById('c' + i).classList.remove('priority');
+            document.getElementById('c' + i + 'Inner').classList.remove('flip');
         }
     }
+
+    setTimeout(function(){ 
+        document.getElementById('c' + cardNumber + 'Inner').classList.toggle('flip');
+    }, 100);
+
+    setTimeout(function(){ 
+        document.getElementById('c' + cardNumber).classList.toggle('priority');
+    }, 300);
+  
 }

@@ -11,7 +11,7 @@ function selectCard(cardNumber) {
     for(var i = 1; i <= 5; i++){
         if(i != cardNumber){
             document.getElementById('c' + i).classList.remove('priority');
-            document.getElementById('c' + i + 'Inner').classList.remove('flip');
+            document.getElementById('c' + i + 'Inner').classList.remove('flip' + i);
         }
     }
 

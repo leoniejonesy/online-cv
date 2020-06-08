@@ -280,6 +280,12 @@ h5{
     padding:0 10px;
 }
 
+.main .content.flex{
+    display:flex;
+    flex-direction:column;
+}
+
+
 .main .content ul{
     padding-left:20px;
 }
@@ -329,6 +335,7 @@ h5{
     padding-top:15px;
     min-width:70px;
     text-align:center;
+    height:105px;
 }
 
 .prec{

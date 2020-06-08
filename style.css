@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=The+Girl+Next+Door&display=swap&family=Quicksand:wght@300&display=swap');
 
 html, body{
     height:100%;
     margin:0;
     background-color:rgb(53,53,53);
-    font-size:12px;
+    background:url('img/background.jpg');
+    background-size:cover;
+    font-size:13px;
 }
 
 .container{
@@ -17,7 +20,7 @@ html, body{
 }
 
 .cards{
-    width:80%;
+    width:100%;
     margin:0 auto;
     position:relative;
     height:35vw;
@@ -26,8 +29,8 @@ html, body{
 }
 
 .card{
-    width: 18vw;
-    height: 30vw;
+    width: 20vw;
+    height: 32vw;
     background-color: transparent;
     border-radius: 10px;
     float: left;
@@ -121,18 +124,68 @@ html, body{
 .front {
     height:100%;
     width:100%;
-background-color:#353535;
-background-image: radial-gradient(closest-side, transparent 98%, rgba(253,195,47,.5) 99%),
-radial-gradient(closest-side, transparent 98%, rgba(253,195,47,.5)  99%);
-background-size:20px 20px;
-background-position:0 0, 10px 10px;
-    border:3px solid #fdc32f;
+    background:
+    radial-gradient(rgb(249,210,90) 0px, transparent 0px),
+    radial-gradient(rgb(249,210,90) 0px, transparent 0px),
+    linear-gradient(rgb(45,45,43) 4px, transparent 0),
+    linear-gradient(45deg, transparent 64px, transparent 65px, rgba(249,210,90,0.5) 65px, rgba(249,210,90,0.5) 66px, transparent 67px, transparent 99px),
+    linear-gradient(-45deg, transparent 65px, transparent 66px, rgba(249,210,90,0.5) 66px, rgba(249,210,90,0.5) 67px, transparent 68px, transparent 99px),
+    #fff;
+    background-size: 90px 90px, 90px 90px,100% 6px, 90px 91px, 91px 91px;
+    background-position: 44px 45px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    background-color:rgb(45,45,43);
     z-index: 2;
 }
+
+.front .box-design{
+    border-left:1px solid rgb(249,210,90);
+    border-right:1px solid rgb(349,210,90);
+    margin:30% 8%;
+    height:60%;
+    display:flex;
+    align-items:center;
+    background:url('img/initial.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:contain;
+}
+
+.front .box-design .arrow-left, .front .box-design .arrow-right{
+    position:absolute;
+    width:40px;
+    height:40px;
+    border-top:1px solid rgb(249,210,90);
+    border-right:1px solid rgb(249,210,90);
+    background: linear-gradient(to left bottom, rgb(45,45,43)67%, transparent 50%);
+}
+
+.front .box-design .arrow-left{
+    left: -10px;
+    transform:rotate(45deg);
+}
+
+.front .box-design .arrow-inner{
+    width:70%;
+    height:70%;
+    position:absolute;
+    right:6px;
+    top:5px;
+    border-right:1px solid rgb(249,210,90);
+    border-top:1px solid rgb(249,210,90);
+}
+
+.front .box-design .arrow-right{
+    right: -10px;
+    transform:rotate(225deg);
+}
+
 .back {
-    background: linear-gradient(to top, #4f4f4f 0%,#4f4f4f 20%,#4f4f4f 80%,#f5f5f5 50%,#f5f5f5 100%);
-    border: 3px solid rgb(173, 171, 171);
+    background-color:#353535;
+    border: 3px solid rgb(249,210,90);
     transform: rotateY(180deg);
+    display:flex;
+    flex-direction:column;
+    padding:0;
 }
 
 .priority{
@@ -165,7 +218,7 @@ background-position:0 0, 10px 10px;
 }
 
 .profile-photo{
-    width:35%;
+    width:33%;
     border-radius:50%;
     border:3px solid #ffffff;
     float:right;
@@ -175,7 +228,11 @@ h1, h2, h3, h4, h5{
     font-family: 'Domine', serif;
     font-weight:normal;
     margin-bottom:0;
-    color:rgb(70,70,70);
+}
+
+h5{
+    color:rgb(249,210,90);
+    margin:0;
 }
 
 .name{
@@ -183,9 +240,156 @@ h1, h2, h3, h4, h5{
 }
 
 .intro{
-    overflow:hidden;
+    padding:10px;
+    z-index:5;
+}
+
+.intro.light{
+    background-color:#ffffff;
+    color:rgb(70,70,70);
+    height:65px;
+}
+
+.intro.dark{
+    background-color:#353535;
+    color:#ffffff;
+}
+
+.intro .heading{
+    display:inline-block;
+}
+
+.intro .heading p{
+    margin:0;
+    margin-bottom:10px;
 }
 
 .main{
+    font-family: serif;
     color:#ffffff;
+    flex:1;
+    overflow:auto;
+    width:100%;
+}
+
+.main.handwrite{
+    font-family:'Kalam', cursive, serif!important;
+}
+
+.main .content{
+    padding:0 10px;
+}
+
+.main .content ul{
+    padding-left:20px;
+}
+
+.contact-footer{
+    font-family: 'Domine', serif;
+}
+
+.contact-footer i:last-child{
+    font-size:11px;
+}
+
+.contact-footer a{
+    margin-left:10px;
+    color:#ffffff;
+    text-decoration: none;
+    font-size:10px;
+}
+
+.dot {
+    height: 8px;
+    width: 8px;
+    margin:1px;
+    background-color: grey;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+.dot.active {
+    background-color: rgb(249,210,90)!important;
+}
+
+.hobbies, .traits{
+    width:100%;
+    padding:0!important;
+}
+
+.hobbies .item{
+    width:50%;
+    float:left;
+    text-align:center;
+}
+
+.traits .item{
+    width:33%;
+    float:left;
+    padding-top:15px;
+    min-width:70px;
+    text-align:center;
+}
+
+.prec{
+    top: 15px;
+    position: relative;
+    font-size: 15px;
+}
+
+.circle{
+    position: relative;
+    top: 2px;
+    left: 2px;
+    text-align: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 100%;
+    background-color: #353535;
+}
+
+.border{
+    position: relative;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color:grey;
+    margin:0 auto;
+}
+
+.border-75{
+    background-image:
+        linear-gradient(180deg, transparent 50%, rgb(249,210,90) 50%),
+        linear-gradient(-90deg, rgb(249,210,90) 50%, transparent 50%);
+}
+
+.border-94{
+    background-image:
+        linear-gradient(248deg, transparent 50%, rgb(249,210,90) 50%),
+        linear-gradient(-90deg, rgb(249,210,90) 50%, transparent 50%);
+}
+
+.border-86{
+    background-image:
+        linear-gradient(220deg, transparent 50%, rgb(249,210,90) 50%),
+        linear-gradient(-90deg, rgb(249,210,90) 50%, transparent 50%);
+}
+
+.border-90{
+    background-image:
+        linear-gradient(234deg, transparent 50%, rgb(249,210,90) 50%),
+        linear-gradient(-90deg, rgb(249,210,90) 50%, transparent 50%);
+}
+
+.border-97{
+    background-image:
+        linear-gradient(259deg, transparent 50%, rgb(249,210,90) 50%),
+        linear-gradient(-90deg, rgb(249,210,90) 50%, transparent 50%);
+}
+
+.border-50{
+    background-image:
+        linear-gradient(90deg, transparent 50%, rgb(249,210,90) 50%),
+        linear-gradient(-90deg, rgb(249,210,90) 50%, transparent 50%);
 }

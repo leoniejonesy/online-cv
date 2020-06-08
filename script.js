@@ -1,12 +1,21 @@
+var openCard = 0;
+var index = 1;
+
 function selectCard(cardNumber) {
 
-    var cards = [
-        document.getElementById('c1'),
-        document.getElementById('c2'),
-        document.getElementById('c3'),
-        document.getElementById('c4'),
-        document.getElementById('c5')
-    ];
+    if(index > 5)
+        index = 1;
+
+    if(cardNumber != openCard)
+    {
+        var card = document.getElementById('c' + cardNumber + 'Inner').getElementsByClassName('back')[0];
+        card.innerHTML = "";
+        var template = document.getElementById('c' + index + 'back');
+        var clone = template.content.cloneNode(true);
+        card.appendChild(clone);
+        index++;
+        openCard = cardNumber;
+    }
 
     for(var i = 1; i <= 5; i++){
         if(i != cardNumber){
@@ -22,5 +31,4 @@ function selectCard(cardNumber) {
     setTimeout(function(){ 
         document.getElementById('c' + cardNumber).classList.toggle('priority');
     }, 300);
-  
 }

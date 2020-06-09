@@ -222,6 +222,8 @@ html, body{
     border-radius:50%;
     border:3px solid #ffffff;
     float:right;
+    position:absolute;
+    top:5px;
 }
 
 h1, h2, h3, h4, h5{
@@ -247,7 +249,11 @@ h5{
 .intro.light{
     background-color:#ffffff;
     color:rgb(70,70,70);
-    height:65px;
+    min-height:65px;
+}
+
+.intro.light p{
+    margin:0;
 }
 
 .intro.dark{
@@ -257,6 +263,7 @@ h5{
 
 .intro .heading{
     display:inline-block;
+    width:62%;
 }
 
 .intro .heading p{

@@ -396,15 +396,15 @@ h5{
         linear-gradient(-90deg, rgb(249,210,90) 50%, transparent 50%);
 }
 
-.border-97{
+.border-95{
     background-image:
-        linear-gradient(259deg, transparent 50%, rgb(249,210,90) 50%),
+        linear-gradient(252deg, transparent 50%, rgb(249,210,90) 50%),
         linear-gradient(-90deg, rgb(249,210,90) 50%, transparent 50%);
 }
 
-.border-50{
+.border-70{
     background-image:
-        linear-gradient(90deg, transparent 50%, rgb(249,210,90) 50%),
+        linear-gradient(162deg, transparent 50%, rgb(249,210,90) 50%),
         linear-gradient(-90deg, rgb(249,210,90) 50%, transparent 50%);
 }
 

@@ -7,4 +7,4 @@ This is an interactive online CV created from using only HTML, CSS & JavaScript.
 ***
 
 It's a bit of fun, and something a little different.  And I had a blast creating it! 
-Any feedback is welcome.
+

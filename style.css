@@ -278,6 +278,7 @@ h5{
     overflow:auto;
     width:100%;
     -webkit-overflow-scrolling:touch;
+    z-index:1;
 }
 
 .main.handwrite{

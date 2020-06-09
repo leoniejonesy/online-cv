@@ -407,3 +407,14 @@ h5{
         linear-gradient(90deg, transparent 50%, rgb(249,210,90) 50%),
         linear-gradient(-90deg, rgb(249,210,90) 50%, transparent 50%);
 }
+
+.social{
+    position:absolute;
+    right:10px;
+}
+
+.social i{
+    font-size:20px;
+    padding:5px;
+    color:#353535;
+}

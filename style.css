@@ -235,7 +235,7 @@ h1, h2, h3, h4, h5{
 h5{
     color:rgb(249,210,90);
     margin:0;
-    font-size:12px;
+    font-size:0.9vw;
 }
 
 .name{
@@ -250,11 +250,15 @@ h5{
 .intro.light{
     background-color:#ffffff;
     color:rgb(70,70,70);
-    min-height:65px;
+    height:15%;
+}
+.intro.light h2{
+    font-size:1.5vw;
 }
 
 .intro.light p{
     margin:0;
+    font-size:1vw;
 }
 
 .intro.dark{
@@ -266,6 +270,8 @@ h5{
     display:inline-block;
     width:62%;
 }
+
+
 
 .intro .heading p{
     margin:0;
@@ -287,12 +293,12 @@ h5{
 }
 
 .main.handwrite .content{
-    font-size:13px!important;
+    font-size:1vw!important;
 }
 
 .main .content{
     padding:0 10px;
-    font-size:12px;
+    font-size:0.9vw;
 }
 
 .main .content.flex{
@@ -321,8 +327,8 @@ h5{
 }
 
 .dot {
-    height: 8px;
-    width: 8px;
+    height: 0.7vw;
+    width: 0.7vw;
     margin:1px;
     background-color: grey;
     border-radius: 50%;
@@ -437,4 +443,12 @@ h5{
     font-family: 'Fredericka the Great', cursive;
     color:#353535;
     margin:0 auto;
+}
+
+.skills-table{
+    width:100%;
+}
+
+.skills-table td{
+    padding:2.5px;
 }

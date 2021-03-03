@@ -333,6 +333,7 @@ h5{
     color:#ffffff;
     text-decoration: none;
     font-size:10px;
+    font-family: 'Domine', serif;
 }
 
 .dot {
@@ -434,6 +435,7 @@ h5{
 .social{
     position:absolute;
     right:10px;
+    z-index:1;
 }
 
 .social i{

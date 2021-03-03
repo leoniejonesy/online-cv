@@ -137,6 +137,10 @@ html, body{
     z-index: 2;
 }
 
+.front:hover{
+    cursor:pointer;
+}
+
 .front .box-design{
     border-left:1px solid rgb(249,210,90);
     border-right:1px solid rgb(349,210,90);
@@ -315,11 +319,16 @@ h5{
     font-family: 'Domine', serif;
 }
 
-.contact-footer i:last-child{
+.contact-footer a{
+    text-decoration: none;
+    color:#ffffff;
+}
+
+.footer-links i:last-child{
     font-size:11px;
 }
 
-.contact-footer a{
+.footer-links a{
     margin-left:10px;
     color:#ffffff;
     text-decoration: none;
